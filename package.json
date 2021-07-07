@@ -1,0 +1,23 @@
+{
+  "name": "mernstack",
+  "version": "1.0.0",
+  "description": "testing application",
+  "main": "server.js",
+  "scripts": {
+    "start" : "node server",
+    "server" : "nodemon server",
+    "client" : "npm start --prefix client",
+    "dev" : "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "author": "Telugu skillhub",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7"
+  }
+}
